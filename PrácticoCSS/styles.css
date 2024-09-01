@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(218, 238, 247);
+}
+
+section{
+    border: solid 1px black;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 25px;
+
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(56, 55, 55);
+    color: aliceblue;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 18px;
+    border-bottom: solid 1px black;
+}
+
+.cita {
+    margin-top: 10px;
+    background-color: beige;
+    border-left: solid 5px rgb(228, 228, 217);
+    padding-left: 10px;
+}
+
+.caja1 {
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+.caja2 {
+    margin: 5px;
+    border: solid 3px black;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(221, 196, 245);
+    box-shadow: 5px 3px 5px black; 
+}
+
+.caja2:hover{
+    background-color: rgb(182, 136, 224);
+}
+
+.relativo {
+    position: relative;
+    border-radius: 3px;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(194, 243, 243);
+    padding: 3px;
+    font-size: small;
+}
+
+.absoluto {
+    position: absolute;
+    border-radius: 3px;
+    padding: 3px;
+    color: aliceblue;
+    background-color: rgb(138, 170, 123);
+    left: 50%;
+    top: 15px;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 5px;
+    gap: 15px;
+    text-align: center;
+}
+
+.grid-item{
+    background-color: rgb(143, 143, 240);
+    border-radius: 5px;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+    background-color: rgb(94, 94, 247);
+}
+
+.animacion{
+    margin: 20px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+
+.animacion:hover{
+    background-color: rgb(29, 221, 221);
+    cursor: pointer;
+}
+
+.mover{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    animation: mover 4s infinite;
+}
+
+@keyframes mover {
+    0%{
+        transform: translateX(0);
+    }  
+    100%{
+        transform: translateX(400px);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        background-color: rgb(87, 98, 112);
+    }
+    
+    h1{
+        font-size: large;
+    }
+}
+
